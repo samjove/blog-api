@@ -44,13 +44,17 @@ The API will be available at http://127.0.0.1:8000/posts/.
 
 ### API Endpoints
 #### List All Posts
-URL: /posts/
-Method: GET
+URL: `/posts/`
+
+Method: `GET`
+
 Description: Retrieve a list of all blog posts.
+
 Response:
-200 OK: Returns a list of posts.
+`200 OK`. Returns a list of posts.
 
 Example:
+    
     [
         {
             "id": 1,
@@ -77,8 +81,10 @@ Example:
     ]
 
 #### Create a New Post
-URL: /posts/
-Method: POST
+URL: `/posts/`
+
+Method: `POST`
+
 Description: Create a new blog post.
 
 Request Body:
@@ -90,36 +96,47 @@ Request Body:
         "tags": ["Tech", "Business"]
     }
 Response:
-201 Created: Returns the created post.
+`201 Created`. Returns the created post.
 
 #### Retrieve a Single Post
-URL: /posts/{id}/
-Method: GET
+URL: `/posts/{id}/`
+
+Method: `GET`
+
 Description: Retrieve a specific post by ID.
+
 Response:
-200 OK: Returns the requested post.
+`200 OK`. Returns the requested post.
 
 #### Update a Post
-URL: /posts/{id}/
-Method: PUT or PATCH
+URL: `/posts/{id}/`
+
+Method: `PUT`
+
 Description: Update an existing post.
 
 Response:
 
-200 OK: Returns the updated post.
+`200 OK`. Returns the updated post.
 
 #### Delete a Post
-URL: /posts/{id}/
-Method: DELETE
+URL: `/posts/{id}/`
+
+Method: `DELETE`
+
 Description: Delete a post by ID.
+
 Response:
-204 No Content: Post deleted successfully.
+`204 No Content`. Post deleted successfully.
 
 #### Search Posts
-URL: /posts/?term=search_term
-Method: GET
+URL: `/posts/?term=search_term`
+
+Method: `GET`
+
 Description: Search posts by title, content, or category.
+
 Response:
-200 OK: Returns a list of posts matching the search term.
+`200 OK`. Returns a list of posts matching the search term.
 
 See project requirements [here](https://roadmap.sh/projects/blogging-platform-api).
