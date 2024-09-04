@@ -8,6 +8,7 @@ Follow the instructions below to set up and run the Blog API on your local machi
 ### Prerequisites 
 
 Python 3.x
+
 Postgres
 
 ### Installation
